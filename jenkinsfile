@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello World') {
+            steps {
+                echo 'Hello, World!'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'This will always run after the pipeline finishes.'
+        }
+
+        success {
+            echo 'Pipeline was successful!'
+        }
+
+        failure {
+            echo 'Pipeline failed.'
+        }
+    }
+}
