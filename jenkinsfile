@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Hello, World!'
                 echo 'this is by Vickey'
+                echo 'new SG SETUP ONLY HTTPS'
             }
         }
     }
